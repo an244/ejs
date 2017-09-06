@@ -22,7 +22,7 @@
       <% }); %>
 
        <% arrPeople.forEach(person => { %>
-       	<h2><%- "Ten: "+ person.name + ". Tuoi: " + person.age %></h2>
+       	<%- include('../partials/personRow.ejs',{person}) %>
        <% }); %>
 
       <script src="reload/reload.js"></script>
