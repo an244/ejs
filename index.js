@@ -18,5 +18,14 @@ app.get('/', (req, res)=> res.render('home'));//tạo ra trang home
 
 app.get('/learn', (req,res)=>res.render('learn'));
 
+const arrPeopleX = [
+       {name: 'Ti1', age:10},
+       {name: 'Teo1', age:11},
+       {name: 'Tun1',age:12}];
+
+//ở file này đặt arrPeople thì bên file learn.js fải gọi đúng tên này
+//tên mảng có thể đặt khác ko cần giống vẫn dc.
+app.locals.arrPeople = arrPeopleX;
+
 reload(app);
 app.listen(3000, ()=>console.log('server started'));
