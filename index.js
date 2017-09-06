@@ -19,5 +19,4 @@ app.get('/', (req, res)=> res.render('home'));//tạo ra trang home
 app.get('/learn', (req,res)=>res.render('learn'));
 
 reload(app);
-
 app.listen(3000, ()=>console.log('server started'));
