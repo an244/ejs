@@ -16,9 +16,15 @@ app.set('view engine','ejs');//engine gì thì sẽ thay đổi đuôi 'ejs' th�
 //hiện tại sử dụng render này thay sendfile: ý nghĩa đọc từng code thành giao diện
 app.get('/', (req, res)=> res.render('home'));//tạo ra trang home
 
+
+const arrMonHoc = ['PHP1', 'NodeJS', 'Angular', 'Android']; 
+
 //parameter thu 2 cua .render truyen ve 1 object wa ben learn.ejs la 1 bien
 //cach nay thich hop cho lam tung user
-app.get('/learn', (req,res)=>res.render('learn', {username:'Thien An'}));
+//co the truyen nhieu object khac nhau.
+app.get('/learn', (req,res)=>{
+	res.render('learn', {username:'Thien An', arrMonHoc:arrMonHoc})
+});
 
 const arrPeopleX = [
        {name: 'Ti1', age:10},
