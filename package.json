@@ -1,0 +1,20 @@
+{
+  "name": "ejs1808",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "eslint-config-rallycoding": "^3.2.0",
+    "reload": "^2.2.2"
+  }
+}
